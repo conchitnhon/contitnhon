@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>Document</title>
+</head>
+<body>
+	<div id="toast"></div>
+	<div class="main">
+		<div class="header grid">
+			<div class="header-heading grid">
+				<!-- logo -->
+				<a href="#" class="heading__logo-link">
+					<img src="./assets/img/logo.png" alt="logo" class="heading__logo">
+				</a>
+
+				<!-- nav mobile -->
+				<label for="mobile-checkbox">
+					<i id="heading__icon" class="heading__icon fas fa-bars"></i>
+				</label>
+				<input type="checkbox" id="mobile-checkbox">
+
+				<label for="mobile-checkbox" class="nav-mobile"></label>
+				<div class="nav-mobile-container">
+					<div class="nav-mobile-heading">
+						<img src="./assets/img/meothua.jpg" alt="logo" class="nav-mobile-heading__logo">
+						<label for="mobile-checkbox">
+							<i class="nav-mobile-heading__close fas fa-times"></i>
+						</label>
+					</div>
+					<ul class="nav-mobile-list">
+						<li class="nav-mobile-list__item--cards">
+							<i class="fas fa-shopping-cart"></i>
+							Giỏ hàng
+						</li>
+						<li class="nav-mobile-list__item">
+							<label for="mobile-checkbox">Tất cả menu</label>
+						</li>
+						<li class="nav-mobile-list__item">
+							<label for="mobile-checkbox">Thanh cua</label>
+						</li>
+						<li class="nav-mobile-list__item">
+							<label for="mobile-checkbox">Gà rán</label>
+						</li>
+						<li class="nav-mobile-list__item">
+							<label for="mobile-checkbox">Mỳ</label>
+						</li>
+						<li class="nav-mobile-list__item--singout">
+							<i class="fas fa-sign-out-alt"></i>
+							Đăng xuất
+						</li>
+					</ul>
+				</div>
+
+				<!-- login -->
+				<div class="heading__account">
+					<span class="heading__account-signup">Đăng ký</span>
+					<span class="heading__account-login">Đăng nhập</span>
+				</div>
+
+			</div>
+
+			<div class="header-navigation">
+				<div class="navigation__btn">
+					<div class="navigation__btn-item btn btn-active">Tất cả menu</div>
+					<div class="navigation__btn-item btn">Thanh cua</div>
+					<div class="navigation__btn-item btn">Gà rán</div>
+					<div class="navigation__btn-item btn">Mỳ</div>
+				</div>
+
+				<div class="header-cart">
+					<i class="fas fa-shopping-cart"></i>
+					<span class="cart__text">Giỏ hàng</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="body">
+			<div class="grid">
+				<!-- shop -->
+				<div class="shop">
+					<!-- silder -->
+					<div class="slides">
+						<div class="slides__item fade">
+							<img src="./assets/img/thanhcua.jpg" style="width: 100%;">
+						</div>
+								
+						<div class="slides__item fade">
+							<img src="./assets/img/garan.jpg" style="width: 100%;">
+						</div>
+						
+						<div class="slides__item fade">
+							<img src="./assets/img/pizza.jpg" style="width: 100%;">
+						</div>
+						
+						<div class="slides__dot" style="text-align:center">
+							<span class="slides__dot-item"></span> 
+							<span class="slides__dot-item"></span> 
+							<span class="slides__dot-item"></span> 
+						</div>
+					</div>
+
+					<div class="shop-contener">
+						<h2 class="shop-contener__heading">Tất cả menu</h2>
+						<div class="shop-content">
+
+							<div class="grid__col-4">
+								<div class="shop-contener__item">
+									<img src="./assets/img/comboGaRanA.jpg" alt="" class="shop-contener__item-img">
+									<h3 class="shop-contener__item-heading">Combo gà rán A</h3>
+									<div class="shop-contener__item-price">
+										<span class="shop-contener__item-firstPrice">79</span>
+										<span class="shop-contener__item-lastPrice">.000đ</span>
+									</div>
+									<div class="shop-contener__item-btn">
+										<div onclick="showAddToast()" class="shop-contener__item-btn-btn btn">Thêm giỏ hàng</div>
+										<!-- Xin lỗi vì sự đặt tên ngu học này -->
+										<div onclick="showBuyToast()" class="shop-contener__item-btn-btn btn btn-active">Mua hàng</div>
+									</div>
+								</div>
+							</div>
+
+								
+								<div class="grid__col-4">
+										<div class="shop-contener__item">
+												<img src="./assets/img/comboGaRanA.jpg" alt="" class="shop-contener__item-img">
+												<h3 class="shop-contener__item-heading">Combo gà rán A</h3>
+												<div class="shop-contener__item-price">
+														<span class="shop-contener__item-firstPrice">79</span>
+														<span class="shop-contener__item-lastPrice">.000đ</span>
+												</div>
+												<div class="shop-contener__item-btn">
+														<div onclick="showAddToast()" class="shop-contener__item-btn-btn btn">Thêm giỏ hàng</div>
+														<!-- Xin lỗi vì sự đặt tên ngu học này -->
+														<div onclick="showBuyToast()" class="shop-contener__item-btn-btn btn btn-active">Mua hàng</div>
+												</div>
+										</div>
+								</div>
+
+								<div class="grid__col-4">
+										<div class="shop-contener__item">
+												<img src="./assets/img/comboGaRanA.jpg" alt="" class="shop-contener__item-img">
+												<h3 class="shop-contener__item-heading">Combo gà rán A</h3>
+												<div class="shop-contener__item-price">
+														<span class="shop-contener__item-firstPrice">79</span>
+														<span class="shop-contener__item-lastPrice">.000đ</span>
+												</div>
+												<div class="shop-contener__item-btn">
+														<div onclick="showAddToast()" class="shop-contener__item-btn-btn btn">Thêm giỏ hàng</div>
+														<!-- Xin lỗi vì sự đặt tên ngu học này -->
+														<div onclick="showBuyToast()" class="shop-contener__item-btn-btn btn btn-active">Mua hàng</div>
+												</div>
+										</div>
+								</div>
+
+								<div class="grid__col-4">
+										<div class="shop-contener__item">
+												<img src="./assets/img/comboGaRanA.jpg" alt="" class="shop-contener__item-img">
+												<h3 class="shop-contener__item-heading">Combo gà rán A</h3>
+												<div class="shop-contener__item-price">
+														<span class="shop-contener__item-firstPrice">79</span>
+														<span class="shop-contener__item-lastPrice">.000đ</span>
+												</div>
+												<div class="shop-contener__item-btn">
+														<div onclick="showAddToast()" class="shop-contener__item-btn-btn btn">Thêm giỏ hàng</div>
+														<!-- Xin lỗi vì sự đặt tên ngu học này -->
+														<div onclick="showBuyToast()" class="shop-contener__item-btn-btn btn btn-active">Mua hàng</div>
+												</div>
+										</div>
+								</div>
+
+								<div class="grid__col-4">
+										<div class="shop-contener__item">
+												<img src="./assets/img/comboGaRanA.jpg" alt="" class="shop-contener__item-img">
+												<h3 class="shop-contener__item-heading">Combo gà rán A</h3>
+												<div class="shop-contener__item-price">
+														<span class="shop-contener__item-firstPrice">79</span>
+														<span class="shop-contener__item-lastPrice">.000đ</span>
+												</div>
+												<div class="shop-contener__item-btn">
+														<div onclick="showAddToast()" class="shop-contener__item-btn-btn btn">Thêm giỏ hàng</div>
+														<!-- Xin lỗi vì sự đặt tên ngu học này -->
+														<div onclick="showBuyToast()" class="shop-contener__item-btn-btn btn btn-active">Mua hàng</div>
+												</div>
+										</div>
+								</div>
+
+								<div class="grid__col-4">
+										<div class="shop-contener__item">
+												<img src="./assets/img/comboGaRanA.jpg" alt="" class="shop-contener__item-img">
+												<h3 class="shop-contener__item-heading">Combo gà rán A</h3>
+												<div class="shop-contener__item-price">
+														<span class="shop-contener__item-firstPrice">79</span>
+														<span class="shop-contener__item-lastPrice">.000đ</span>
+												</div>
+												<div class="shop-contener__item-btn">
+														<div onclick="showAddToast()" class="shop-contener__item-btn-btn btn">Thêm giỏ hàng</div>
+														<!-- Xin lỗi vì sự đặt tên ngu học này -->
+														<div onclick="showBuyToast()" class="shop-contener__item-btn-btn btn btn-active">Mua hàng</div>
+												</div>
+										</div>
+								</div>
+
+								<div class="grid__col-4">
+										<div class="shop-contener__item">
+												<img src="./assets/img/comboGaRanA.jpg" alt="" class="shop-contener__item-img">
+												<h3 class="shop-contener__item-heading">Combo gà rán A</h3>
+												<div class="shop-contener__item-price">
+														<span class="shop-contener__item-firstPrice">79</span>
+														<span class="shop-contener__item-lastPrice">.000đ</span>
+												</div>
+												<div class="shop-contener__item-btn">
+														<div onclick="showAddToast()" class="shop-contener__item-btn-btn btn">Thêm giỏ hàng</div>
+														<!-- Xin lỗi vì sự đặt tên ngu học này -->
+														<div onclick="showBuyToast()" class="shop-contener__item-btn-btn btn btn-active">Mua hàng</div>
+												</div>
+										</div>
+								</div>
+
+								<div class="grid__col-4">
+										<div class="shop-contener__item">
+												<img src="./assets/img/comboGaRanA.jpg" alt="" class="shop-contener__item-img">
+												<h3 class="shop-contener__item-heading">Combo gà rán A</h3>
+												<div class="shop-contener__item-price">
+														<span class="shop-contener__item-firstPrice">79</span>
+														<span class="shop-contener__item-lastPrice">.000đ</span>
+												</div>
+												<div class="shop-contener__item-btn">
+														<div onclick="showAddToast()" class="shop-contener__item-btn-btn btn">Thêm giỏ hàng</div>
+														<!-- Xin lỗi vì sự đặt tên ngu học này -->
+														<div onclick="showBuyToast()" class="shop-contener__item-btn-btn btn btn-active">Mua hàng</div>
+												</div>
+										</div>
+								</div>
+
+								
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="grid">
+				<div class="grid__row footer-contener">
+
+					<div class="grid__col-3">
+						<div class="footer-item">
+							<h3 class="footer-item__heading">developer</h3>
+							<div class="footer-item__text">
+								<spam class="footer-item__text-credit">Name</spam>
+								<span class="footer-item__text-name">Nguyễn Hoàng Hải</span>
+							</div>
+							<div class="footer-item__connect">
+								<span class="footer-item__connect-connection">Kết nối</span>
+								<div class="footer-item__connect-icon">
+									<a href="https://www.facebook.com/hoanghai.CrossX/" class="footer-item__connect-icon-link">
+										<i class="footer-item__connect-icon-link-icon fab fa-facebook-square"></i>
+									</a>
+									<!-- Xin lỗi lần nữa -->
+									<a href="https://www.instagram.com/hoanghai1510/" class="footer-item__connect-icon-link">
+										<i class="footer-item__connect-icon-link-icon fab fa-instagram-square"></i>
+									</a>
+								</div>
+							</div>
+
+							<span class="footer-vertical"></span>
+								
+						</div>
+					</div>
+
+
+
+					<div class="grid__col-3">
+							<div class="footer-item">
+									<h3 class="footer-item__heading">designer</h3>
+									<div class="footer-item__text">
+											<spam class="footer-item__text-credit">Name</spam>
+											<span class="footer-item__text-name">Lê Thùy Dung</span>
+									</div>
+									<div class="footer-item__connect">
+											<span class="footer-item__connect-connection">Kết nối</span>
+											<div class="footer-item__connect-icon">
+													<a href="https://www.facebook.com/profile.php?id=100013130021178" class="footer-item__connect-icon-link">
+															<i class="footer-item__connect-icon-link-icon fab fa-facebook-square"></i>
+													</a>
+													<!-- Xin lỗi lần nữa -->
+													<a href="https://www.instagram.com/quinzel434/" class="footer-item__connect-icon-link">
+															<i class="footer-item__connect-icon-link-icon fab fa-instagram-square"></i>
+													</a>
+											</div>
+									</div>
+
+									<span class="footer-vertical"></span>
+
+							</div>
+					</div>
+					
+					<div class="grid__col-3">
+							<div class="footer-item">
+									<h3 class="footer-item__heading">đứa góp vui</h3>
+									<div class="footer-item__text">
+											<spam class="footer-item__text-credit">Name</spam>
+											<span class="footer-item__text-name">Tuột Pẩn</span>
+									</div>
+									<div class="footer-item__connect">
+											<span class="footer-item__connect-connection">Ai biết j đâu con đợi papa mama có nhiều tiền mua đồ măm ngon choo con hoi</span>
+									</div>
+
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="signup-modal" class="modal">
+			<form action="" method="post" class="form" id="signup">
+				<h2 class="form-heading">Đăng ký</h2>
+				<i class="form-signup-close fas fa-times"></i>
+				<div class="spacer"></div>
+				<div class="form-group">
+					<label for="fullname" class="form-label">Họ và tên</label>
+					<input type="text" name="fullname" id="fullname" class="form-control" placeholder="VD: Tuột Pẩn">
+					<span class="form-message"></span>
+				</div>
+				<div class="form-group">
+					<label for="email" class="form-label">Email</label>
+					<input type="text" name="email" id="email" class="form-control" placeholder="VD: TuotPanHamAn@gmail.com">
+					<span class="form-message"></span>
+				</div>
+				<div class="form-group">
+					<label for="password" class="form-label">Mật khẩu</label>
+					<input type="password" name="password" id="password" class="form-control" placeholder="Nhập mật khẩu">
+					<span class="form-message"></span>
+				</div>
+				<div class="form-group">
+					<label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
+					<input type="password" name="password_confirmation" id="password_confirmation" class="form-control" placeholder="Nhập lại mật khẩu">
+					<span class="form-message"></span>
+				</div>
+				<div class="form-group">
+					<div class="rules">
+						<input type="checkbox" id="form-rules">
+						Đã đọc và đồng ý với 
+						<a href="#" class="form-link">Điều khoản dịch vụ</a> & <a href="#" class="form-link">Chính sách bảo mật</a>
+						<span class="form-message"></span>
+					</div>
+				</div>
+				<button class="form-submit">Đăng ký</button>
+			</form>
+	</div>
+
+	<div id="login-modal" class="modal">
+		<form action="" method="post" class="form" id="login">
+			<h2 class="form-heading">Đăng Nhập</h2>
+			<i class="form-login-close fas fa-times"></i>
+			<div class="spacer"></div>
+			<div class="form-group">
+				<label for="email" class="form-label">Email</label>
+				<input type="text" id="email" class="form-control" placeholder="VD: TuotPanHamAn@gmail.com">
+				<span class="form-message"></span>
+			</div>
+			<div class="form-group">
+				<label for="password" class="form-label">Mật khẩu</label>
+				<input type="password" id="password" class="form-control" placeholder="Nhập mật khẩu">
+				<span class="form-message"></span> 
+			</div>
+			<div class="form-group">
+				<span class="form-question">
+					Bạn chua có tài khoản ?
+					<span class="form-switch">Đăng ký</span>
+				</span>
+			</div>
+			<button class="form-submit">Đăng Nhập</button>
+		</form>
+	</div>
+
+	<script src="./assets/javascript/main.js"></script>
+	<script>
+
+		Validator({
+			form: '#signup',
+			formGroupSelector: '.form-group',
+			errorSelector: '.form-message',
+			rules: [
+				Validator.isRequired('#fullname'),
+
+				Validator.isRequired('#email'),
+				Validator.isEmail('#email'),
+
+				Validator.isRequired('#password'),
+				Validator.ispassword('#password', 6),
+				
+				Validator.isRequired('#password_confirmation'),
+				Validator.isConfirmed('#password_confirmation', () => {
+					return document.querySelector('#signup #password').value;
+				}),
+
+				Validator.isRequired('#form-rules', 'Cần đồng ý với điều khoản sử dụng')
+			],
+			onSubmit: (data) => {
+				console.log(data);
+			}
+		})
+
+		Validator({
+			form: '#login',
+			formGroupSelector: '.form-group',
+			errorSelector: '.form-message',
+			rules: [
+				Validator.isEmail('#email'),
+				Validator.isRequired('#password'),
+			]
+		})
+
+	</script>
+</body>
+</html>
