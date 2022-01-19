@@ -382,7 +382,6 @@
 
 #mobile-checkbox:checked ~ .nav-mobile-container {
   transform: translateX(0%);
-
 }
 
 
